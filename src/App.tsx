@@ -4,6 +4,7 @@ import Home from "@/scenes/home";
 import Benefits from "@/scenes/benefits";
 import OurClasses from "@/scenes/ourClasses";
 import { SelectedPage } from "@/shared/types";
+import ContactUs from "./scenes/contacts";
 
 function App() {
   const [topOfPage, setTopOfPage] = useState<boolean>(false);
@@ -37,6 +38,9 @@ function App() {
         setSelectedPage={setSelectedPage}
         />
         <OurClasses
+        setSelectedPage={setSelectedPage}
+        />
+        <ContactUs
         setSelectedPage={setSelectedPage}
         />
       </div>
