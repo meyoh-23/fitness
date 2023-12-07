@@ -72,6 +72,7 @@ const ContactUs = ({setSelectedPage}: Props) => {
                         <input 
                         className={inputStyles}
                         type="text" 
+                        autoComplete='off'
                         placeholder='NAME'
                         {...register("name", {
                             required: true,
@@ -89,6 +90,7 @@ const ContactUs = ({setSelectedPage}: Props) => {
                         <input 
                         className={inputStyles}
                         type="text" 
+                        autoComplete='off'
                         placeholder='EMAIL'
                         {...register("email", {
                             required: true,
