@@ -9,6 +9,7 @@ import Footer from "./scenes/footer";
 
 function App() {
   const [topOfPage, setTopOfPage] = useState<boolean>(false);
+  const [selectedPage, setSelectedPage] = useState<SelectedPage>(SelectedPage.Home);
 
   useEffect( ()=> {
     const handleScroll = () => {
@@ -21,8 +22,6 @@ function App() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  const [selectedPage, setSelectedPage] = useState<SelectedPage>(SelectedPage.Home);
 
   return (
     <>
