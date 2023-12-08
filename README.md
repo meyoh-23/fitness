@@ -1,5 +1,9 @@
 # Fitness Page
 
+## HOSTED PAGE ON NETLIFY
+
+https://evogym-with-ts-tailwind.netlify.app/
+
 The project is build with React js and Typescript.js as the main libraries
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
