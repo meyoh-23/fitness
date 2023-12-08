@@ -15,6 +15,7 @@ type Props = {
 } 
 
 const BenefitCard = ({title, description, icon, setSelectedPage}: Props) => {
+    
   return (
     <motion.div 
     variants={childVariant}

@@ -11,16 +11,18 @@ function App() {
   const [topOfPage, setTopOfPage] = useState<boolean>(false);
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(SelectedPage.Home);
 
+  // check of we are at the top of the page
   useEffect( ()=> {
     const handleScroll = () => {
       if ( window.scrollY === 0) {
+        // we set topOfPage to true and set selectedPage to home
         setTopOfPage(true);
         setSelectedPage(SelectedPage.Home);
       }
-      if ( window.scrollY !== 0) setTopOfPage(false);
+      if ( window.scrollY !== 0) setTopOfPage(false); //topOfPage is set to false
     }
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll);// listen to "scroll" event
+    return () => window.removeEventListener("scroll", handleScroll); // to prevent memory leaks and bugs
   }, []);
 
   return (
